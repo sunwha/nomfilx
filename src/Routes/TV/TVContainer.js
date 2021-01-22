@@ -13,9 +13,9 @@ export default class extends React.Component{
 
     async componentDidMount(){
         try {
-            const { data: { result: topRated } } = await tvApi.topRated();
-            const { data: { result: popular } } = await tvApi.popular();
-            const { data: { result: airingToday } } = await tvApi.airingToday();
+            const { data: { results: topRated } } = await tvApi.topRated();
+            const { data: { results: popular } } = await tvApi.popular();
+            const { data: { results: airingToday } } = await tvApi.airingToday();
             this.setState({ topRated, popular, airingToday });
         } catch {
             this.setState({
