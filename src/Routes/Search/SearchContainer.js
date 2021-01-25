@@ -30,7 +30,6 @@ export default class extends React.Component {
         const { searchTerm } = this.state;
         this.setState({ loading: true });
         try {
-            throw Error();
             const { data: { results: movieResults } } = await moviesApi.search(searchTerm);
             const { data: { results: showResults } } = await tvApi.search(searchTerm);
             this.setState({ movieResults, showResults });
@@ -45,7 +44,7 @@ export default class extends React.Component {
         const { movieResults, showResults, searchTerm, updateTerm, loading, error } = this.state;
         return (
             <SearchPresenter
-            movieResult={movieResults}
+            movieResults={movieResults}
             showResults={showResults}
             searchTerm={searchTerm}
             loading={loading}

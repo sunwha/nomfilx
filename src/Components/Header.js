@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
-import movieImg from "images/clapperboard.svg";
-import tvImg from "images/tv.svg";
-import searchImg from "images/loupe.svg";
+import movieImg from "assets/clapperboard.svg";
+import tvImg from "assets/tv.svg";
+import searchImg from "assets/loupe.svg";
 
 const Header = styled.header`
 position:fixed; top:0; bottom:0; left:0; width:50px; text-align:center; background:rgba(0, 0, 0, .8); box-shadow:1px 0 5px rgba(255, 255, 255, .05)
