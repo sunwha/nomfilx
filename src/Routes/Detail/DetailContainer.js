@@ -1,11 +1,11 @@
-import { moviesApi, tvApi } from "api";
 import React from "react";
 import DetailPresenter from "./DetailPresenter";
+import { moviesApi, tvApi } from "api";
 
 export default class extends React.Component{
     constructor(props){
         super(props);
-        const {location: { pathname }} = this.props;
+        const { location: { pathname } } = this.props;
         this.state = {
             result: null,
             error: null,
@@ -36,6 +36,7 @@ export default class extends React.Component{
         } catch {
             this.setState({ error: "Can't find anything." });
         } finally {
+            console.log(isMovie)
             this.setState({ loading: false, result});
         }
     }
