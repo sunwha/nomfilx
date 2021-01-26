@@ -4,10 +4,10 @@ Learning React and ES6 by building a Movie Discovery App.
 
 ## Screens
 
-- [ ] Home
-- [ ] TV Shows
-- [ ] Search
-- [ ] Detail
+- [x] Home
+- [x] TV Shows
+- [x] Search
+- [x] Detail
 
 ## API Verbs
 
@@ -23,7 +23,6 @@ Learning React and ES6 by building a Movie Discovery App.
 ## Code Chellenges
 
 - [ ] IMDB Link
-- [ ] Tabs inside of
 - [ ] Tabs inside of Movie / Show Details (YT Videos, Production Company & Countries)
 - [ ] Collections Link
 - [ ] /Collections Route
