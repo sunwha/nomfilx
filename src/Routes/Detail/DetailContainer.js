@@ -36,7 +36,6 @@ export default class extends React.Component{
         } catch {
             this.setState({ error: "Can't find anything." });
         } finally {
-            console.log(isMovie)
             this.setState({ loading: false, result});
         }
     }

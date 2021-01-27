@@ -6,15 +6,17 @@ import Section from "Components/Section";
 import Loader from "Components/Loader";
 import Message from "Components/Message";
 import Poster from "Components/Poster";
+import PageIntro from "Components/PageIntro";
 
 
 const TVPresenter = ({topRated, airingToday, popular, error, loading}) => (
     <>
     <Helmet>
-        <title>TV Shows | Nomfilx</title>
+        <title>TV Shows | Nomfilx Official</title>
     </Helmet>
     {loading ?  <Loader /> : (
         <Wrapper>
+            <PageIntro title="TV Shows" content="Don't ignore me because I'm small. Even though the screen size is small, there is an infinite world on TV. From sitcoms to dramas to travel programs and talk shows. All the fun in the world, in the TV." />
             {topRated && topRated.length > 0 && (
                 <Section title="Top Rated Shows">
                     {topRated.map(show => (

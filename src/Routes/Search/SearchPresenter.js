@@ -19,7 +19,7 @@ const Input = styled.input`
 const SearchPresenter = ({movieResults, showResults, searchTerm, updateTerm, handleSubmit, error, loading}) =>(
     <>
     <Helmet>
-        <title>Search | Nomfilx</title>
+        <title>Search | Nomfilx Official</title>
     </Helmet>
     <Wrapper>
         <Form onSubmit={handleSubmit}>

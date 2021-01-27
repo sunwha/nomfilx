@@ -6,10 +6,10 @@ const Container = styled.div`
     :not(:last-child) {margin-bottom:50px}
 `;
 const Title = styled.strong`
-    font-weight:700; font-size:16px;
+    font-weight:700; font-size:22px;
 `;
 const Grid = styled.div`
-    display:grid; grid-template-columns:repeat(auto-fill, 125px); grid-gap:25px; margin-top:25px
+    display:grid; grid-template-columns:repeat(6, 1fr); grid-gap:25px; margin-top:25px
 `;
 
 const Section = ({title, children}) => (

@@ -8,7 +8,7 @@ const Container = styled.div`
 `;
 
 const Image = styled.div`
-    height:188px;
+    height:400px;
     border-radius:4px;
     background-image:url(${props => props.bgUrl});
     background-size:cover;

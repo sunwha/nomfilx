@@ -6,14 +6,16 @@ import Section from "Components/Section";
 import Message from "Components/Message";
 import Poster from "Components/Poster";
 import Loader from "Components/Loader";
+import PageIntro from "Components/PageIntro";
 
 const HomePresenter = ({nowPlaying, upComing, popular, error, loading}) => (
     <>
     <Helmet>
-        <title>Movies | Nomfilx</title>
+        <title>Movies | Nomfilx Official</title>
     </Helmet>
     {loading ?  <Loader /> : (
             <Wrapper>
+                <PageIntro title="Movie" content="From fear that squeezes the whole body to comedy that makes people laugh, to dramas and romance that evoke empathy. The movie is talking to you. The touching and comfort of countless stories! That's why we watch movies."/>
                 {nowPlaying && nowPlaying.length > 0 && (
                     <Section title="Now Playing">
                         {nowPlaying.map(movie => (
