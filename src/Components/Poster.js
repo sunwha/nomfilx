@@ -22,7 +22,7 @@ const Rating = styled.span`
 
 const ImageContainer = styled.div`
     position:relative;
-    margin-bottom:5px;
+    margin-bottom:10px;
     &:hover {
         ${Image} { opacity:0.3 }
         ${Rating} { opacity:1 }
@@ -30,10 +30,10 @@ const ImageContainer = styled.div`
 `;
 
 const Title = styled.strong`
-    display:block; margin-bottom:3px
+    display:block; font-size:16px; margin-bottom:3px
 `;
 const Year = styled.span`
-    font-size:10px; color:rgba(255, 255, 255, 0.5)
+    font-size:12px; color:rgba(255, 255, 255, 0.5)
 `;
 
 const Poster = ({ id, imageUrl, title, rating, year, isMovie = false }) => (
@@ -54,7 +54,7 @@ const Poster = ({ id, imageUrl, title, rating, year, isMovie = false }) => (
 
 Poster.propTypes = {
     id: PropTypes.number.isRequired,
-    imageUrl: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string,
     title: PropTypes.string.isRequired,
     rating: PropTypes.number,
     year: PropTypes.string,

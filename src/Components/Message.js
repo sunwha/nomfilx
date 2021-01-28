@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const Container = styled.div`
-    width:100vw; display:flex; justify-content:center;
+    display:flex; width:100%; height:50vh; justify-content:center;
 `;
 
 const Text = styled.span`
-    color:${props => props.color}
+    color:${props => props.color}; vertical-align:middle
 `;
 
 const Error = ({ text, color }) => (

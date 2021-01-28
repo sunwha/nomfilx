@@ -22,6 +22,7 @@ export default class extends React.Component{
                 error: "Can't find movies information."
             });
         } finally {
+            window.scrollTo(0, 0);
             this.setState({
                 loading: false
             });

@@ -36,6 +36,7 @@ export default class extends React.Component{
         } catch {
             this.setState({ error: "Can't find anything." });
         } finally {
+            window.scrollTo(0, 0);
             this.setState({ loading: false, result});
         }
     }

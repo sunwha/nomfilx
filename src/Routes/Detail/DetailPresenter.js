@@ -167,7 +167,7 @@ const DetailPresenter = ({ result, loading, error }) => (
                 ) : null}
                 </div>
                 <div className="sub-section">
-                { result.created_by.length > 0 ? (
+                { result.created_by && result.created_by.length > 0 ? (
                     <>
                     <SubTitle>Creators</SubTitle>
                     <Creators>

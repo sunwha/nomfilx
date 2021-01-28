@@ -5,7 +5,7 @@ import movieImg from "assets/clapperboard.svg";
 import tvImg from "assets/tv.svg";
 import searchImg from "assets/loupe.svg";
 
-const Header = styled.header`
+const HeadeContainer = styled.header`
 position:fixed; top:0; bottom:0; left:0; z-index:500; width:50px; text-align:center; background:rgba(0, 0, 0, .8); box-shadow:1px 0 5px rgba(255, 255, 255, .05)
 `;
 
@@ -35,16 +35,18 @@ a {
 `;
 
 const $Link = styled(Link)`
-display:block
-&:focus {color:inherit}
+    display:block;
+    &:focus {color:inherit}
 `;
 
-export default withRouter(({location: { pathname }}) => (
-    <Header className="nav">
+const Header = ({location: { pathname }}) => (
+    <HeadeContainer className="nav">
         <List>
             <Item current={pathname === "/"}><$Link to="/">Movies</$Link></Item>
             <Item current={pathname === "/tv"}><$Link to="/tv">TV</$Link></Item>
             <Item current={pathname === "/search"}><$Link to="/search">Search</$Link></Item>
         </List>
-    </Header>
-));
+    </HeadeContainer>
+)
+
+export default withRouter(Header);

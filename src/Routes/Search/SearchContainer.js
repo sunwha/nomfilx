@@ -1,4 +1,4 @@
-import { moviesApi, tvApi } from "api";
+import { moviesApi, tvApi, searchApi } from "api";
 import React from "react";
 import SearchPresenter from "./SearchPresenter";
 
@@ -6,6 +6,7 @@ export default class extends React.Component {
     state = {
         movieResults: null,
         showResults: null,
+        keyWordResults: null,
         searchTerm: "",
         loading: false,
         error: null
@@ -18,12 +19,35 @@ export default class extends React.Component {
             this.searchByTerm();
         }
     }
-
+    
     updateTerm = (event) => {
         const { target: { value } } = event;
         this.setState({
-            searchTerm: value
+            searchTerm: value,
+        }, () => {
+            this.searchByKeyword();
+            this.searchByTerm();
         });
+    }
+
+    clickKeyword = (event) => {
+        event.preventDefault();
+        const { target: {innerText} } = event;
+        this.setState({
+            searchTerm: innerText,
+        }, this.searchByTerm);
+    }
+
+    searchByKeyword = async () => {
+        try {
+            const { searchTerm } = this.state;
+            const { data: { results: keyWordResults } } = await searchApi.keyword(searchTerm);
+            if (keyWordResults !== null) {
+                this.setState({ keyWordResults });
+            }
+        } catch {
+        } finally {
+        }
     }
 
     searchByTerm = async () => {
@@ -32,6 +56,9 @@ export default class extends React.Component {
         try {
             const { data: { results: movieResults } } = await moviesApi.search(searchTerm);
             const { data: { results: showResults } } = await tvApi.search(searchTerm);
+            console.log(encodeURIComponent(searchTerm))
+            console.log(movieResults)
+            console.log(showResults)
             this.setState({ movieResults, showResults });
         } catch {
             this.setState({ error: "Can't find results." });
@@ -41,14 +68,16 @@ export default class extends React.Component {
     }
 
     render(){
-        const { movieResults, showResults, searchTerm, updateTerm, loading, error } = this.state;
+        const { movieResults, showResults, keyWordResults, searchTerm, updateTerm, clickKeyword, loading, error } = this.state;
         return (
             <SearchPresenter
             movieResults={movieResults}
             showResults={showResults}
+            keyWordResults={keyWordResults}
             searchTerm={searchTerm}
             loading={loading}
             error={error}
+            clickKeyword={this.clickKeyword}
             handleSubmit={this.handleSubmit}
             updateTerm={this.updateTerm} />
         );
