@@ -56,9 +56,6 @@ export default class extends React.Component {
         try {
             const { data: { results: movieResults } } = await moviesApi.search(searchTerm);
             const { data: { results: showResults } } = await tvApi.search(searchTerm);
-            console.log(encodeURIComponent(searchTerm))
-            console.log(movieResults)
-            console.log(showResults)
             this.setState({ movieResults, showResults });
         } catch {
             this.setState({ error: "Can't find results." });

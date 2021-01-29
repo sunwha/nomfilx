@@ -34,7 +34,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://sunwha.github.io/nomflix",
+  "homepage": "http://sunwha.github.io/nomflix",
   "browserslist": {
     "production": [
       ">0.2%",
