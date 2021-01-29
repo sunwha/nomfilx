@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.js": "/nomflix/static/js/main.15d948e8.chunk.js",
-    "main.js.map": "/nomflix/static/js/main.15d948e8.chunk.js.map",
-    "runtime-main.js": "/nomflix/static/js/runtime-main.3d0dc9c1.js",
-    "runtime-main.js.map": "/nomflix/static/js/runtime-main.3d0dc9c1.js.map",
-    "static/css/2.2bc256df.chunk.css": "/nomflix/static/css/2.2bc256df.chunk.css",
-    "static/js/2.e9cf7f23.chunk.js": "/nomflix/static/js/2.e9cf7f23.chunk.js",
-    "static/js/2.e9cf7f23.chunk.js.map": "/nomflix/static/js/2.e9cf7f23.chunk.js.map",
-    "index.html": "/nomflix/index.html",
-    "static/css/2.2bc256df.chunk.css.map": "/nomflix/static/css/2.2bc256df.chunk.css.map",
-    "static/js/2.e9cf7f23.chunk.js.LICENSE.txt": "/nomflix/static/js/2.e9cf7f23.chunk.js.LICENSE.txt",
-    "static/media/clapperboard.1e18c406.svg": "/nomflix/static/media/clapperboard.1e18c406.svg",
-    "static/media/icon-imdb.55e9a457.svg": "/nomflix/static/media/icon-imdb.55e9a457.svg",
-    "static/media/loupe.ced13e5e.svg": "/nomflix/static/media/loupe.ced13e5e.svg",
-    "static/media/noPosterSmall.png": "/nomflix/static/media/noPosterSmall.ea2ad102.png",
-    "static/media/tv.acdca9c1.svg": "/nomflix/static/media/tv.acdca9c1.svg"
+    "main.js": "/mrkerr/nomflix/static/js/main.15d948e8.chunk.js",
+    "main.js.map": "/mrkerr/nomflix/static/js/main.15d948e8.chunk.js.map",
+    "runtime-main.js": "/mrkerr/nomflix/static/js/runtime-main.75d6ec9b.js",
+    "runtime-main.js.map": "/mrkerr/nomflix/static/js/runtime-main.75d6ec9b.js.map",
+    "static/css/2.2bc256df.chunk.css": "/mrkerr/nomflix/static/css/2.2bc256df.chunk.css",
+    "static/js/2.eacc20ad.chunk.js": "/mrkerr/nomflix/static/js/2.eacc20ad.chunk.js",
+    "static/js/2.eacc20ad.chunk.js.map": "/mrkerr/nomflix/static/js/2.eacc20ad.chunk.js.map",
+    "index.html": "/mrkerr/nomflix/index.html",
+    "static/css/2.2bc256df.chunk.css.map": "/mrkerr/nomflix/static/css/2.2bc256df.chunk.css.map",
+    "static/js/2.eacc20ad.chunk.js.LICENSE.txt": "/mrkerr/nomflix/static/js/2.eacc20ad.chunk.js.LICENSE.txt",
+    "static/media/clapperboard.1e18c406.svg": "/mrkerr/nomflix/static/media/clapperboard.1e18c406.svg",
+    "static/media/icon-imdb.55e9a457.svg": "/mrkerr/nomflix/static/media/icon-imdb.55e9a457.svg",
+    "static/media/loupe.ced13e5e.svg": "/mrkerr/nomflix/static/media/loupe.ced13e5e.svg",
+    "static/media/noPosterSmall.png": "/mrkerr/nomflix/static/media/noPosterSmall.ea2ad102.png",
+    "static/media/tv.acdca9c1.svg": "/mrkerr/nomflix/static/media/tv.acdca9c1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3d0dc9c1.js",
+    "static/js/runtime-main.75d6ec9b.js",
     "static/css/2.2bc256df.chunk.css",
-    "static/js/2.e9cf7f23.chunk.js",
+    "static/js/2.eacc20ad.chunk.js",
     "static/js/main.15d948e8.chunk.js"
   ]
 }
